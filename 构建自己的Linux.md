@@ -89,9 +89,14 @@ sudo apt-get install libncurses5-dev		//图形化库
 
 1. 开启LPDDR4支持
 2. 修改DTS使用LPDDR4，打开`/u-boot/arch/arm/dts`中的`rk3399-orangepi-u-boot.dtsi`，修改`#include "rk3399-sdram-ddr3-1333.dtsi"`为`#include "rk3399-sdram-lpddr4-100.dtsi"`
-3. 
 
 #### dts
+
+#### autoboot delay
+Boot option > Autoboot options > (5) delay in seconds before automatically booting
+> [!NOTE]
+>
+> 方便进入uboot调试，后续可以调小
 
 ### uboot编译
 编译相关命令
